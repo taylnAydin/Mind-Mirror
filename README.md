@@ -73,12 +73,10 @@ To use the application:
 ## 🎨 Visual Previews
 
 ### Main Menu
-Discover the user-friendly main menu, providing easy navigation to all features.
-![Main Menu](menu.png)
+![Main Menu](assets/menu.png)
 
 ### Avatar Selection
-Personalize your learning experience by choosing from a variety of avatars.
-![Avatar Selection](avatars.png)
+![Avatar Selection](assets/avatars.png)
 
 
 ## 💡 Future Improvements
