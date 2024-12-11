@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="teachAnchor" prefHeight="811.0" prefWidth="1073.0" style="-fx-background-color: #F5F5DC; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aydin.mindmirror.TeachController">
+    <children>
+        <TextArea fx:id="textBox" focusTraversable="false" layoutX="725.0" layoutY="45.0" prefHeight="653.0" prefWidth="301.0" />
+        <Button layoutX="725.0" layoutY="731.0" mnemonicParsing="false" onAction="#deleteContent" prefHeight="44.0" prefWidth="134.0" style="-fx-border-radius: 10; -fx-background-color: #FF0000;" text="DELETE" textFill="WHITE">
+            <font>
+                <Font name="Avenir Next Condensed Heavy Italic" size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="saveButton" layoutX="892.0" layoutY="731.0" mnemonicParsing="false" onAction="#saveNote" prefHeight="44.0" prefWidth="134.0" style="-fx-border-radius: 10; -fx-background-color: #00FF00;" text="SAVE" textFill="WHITE">
+            <font>
+                <Font name="Avenir Next Condensed Heavy Italic" size="16.0" />
+            </font>
+        </Button>
+        <Button layoutX="36.0" layoutY="731.0" mnemonicParsing="false" onAction="#startTeaching" prefHeight="44.0" prefWidth="190.0" style="-fx-border-radius: 10; -fx-background-color: #800080;" text="START TEACHING" textFill="WHITE">
+            <font>
+                <Font name="Avenir Next Condensed Heavy Italic" size="16.0" />
+            </font>
+        </Button>
+        <Button layoutX="275.0" layoutY="731.0" mnemonicParsing="false" onAction="#stopTeaching" prefHeight="44.0" prefWidth="173.0" style="-fx-border-radius: 10; -fx-background-color: #FFA500;" text="STOP TEACHING" textFill="WHITE">
+            <font>
+                <Font name="Avenir Next Condensed Heavy Italic" size="16.0" />
+            </font>
+        </Button>
+        <Button layoutX="494.0" layoutY="731.0" mnemonicParsing="false" onAction="#finishTeaching" prefHeight="44.0" prefWidth="173.0" style="-fx-border-radius: 10; -fx-background-color: #808080;" text="FINISH TEACHING" textFill="WHITE">
+            <font>
+                <Font name="Avenir Next Condensed Heavy Italic" size="16.0" />
+            </font>
+        </Button>
+        <MediaView fx:id="videoPlayer" fitHeight="370.0" fitWidth="630.0" layoutX="36.0" layoutY="45.0" />
+        <Label fx:id="teachingLabel" layoutX="71.0" layoutY="481.0" text="I'M LISTENING ....." visible="false">
+            <font>
+                <Font name="Charter Italic" size="64.0" />
+            </font>
+        </Label>
+        <Label fx:id="startLabel" layoutX="39.0" layoutY="481.0" text="PRESS START TO TEACH ME!!!">
+            <font>
+                <Font name="Charter Italic" size="48.0" />
+            </font>
+        </Label>
+        <Label fx:id="stopLabel" layoutX="35.0" layoutY="482.0" text="LET'S HAVE A BREAK" visible="false">
+            <font>
+                <Font name="Charter Italic" size="64.0" />
+            </font>
+        </Label>
+        <Label fx:id="finishLabel" layoutX="43.0" layoutY="505.0" text="NICE JOB!!! I'M READY FOR ANOTHER LESSON!!!!" visible="false">
+            <font>
+                <Font name="Charter Italic" size="28.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="micImage" fitHeight="150.0" fitWidth="150.0" layoutX="276.0" layoutY="556.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@microphone.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
