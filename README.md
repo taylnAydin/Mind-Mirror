@@ -73,10 +73,10 @@ To use the application:
 ## 🎨 Visual Previews
 
 ### Main Menu
-![Main Menu](assets/menu.png)
+![Main Menu](screenshots/menu.png)
 
 ### Avatar Selection
-![Avatar Selection](assets/avatars.png)
+![Avatar Selection](screenshots/avatars.png)
 
 
 ## 💡 Future Improvements
